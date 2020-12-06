@@ -5,8 +5,11 @@
 
 using namespace std;
 
+string temat[5];
+
 int main() {
 
+    int number;
     int line;
     int lNumber=1;
 
@@ -18,11 +21,27 @@ int main() {
         cout << " file not exist" << endl;
     }
 
+    string linia;
 
 
+    int nr_linii=1;
+    int i = 0;
 
+    while(getline(plik,linia))
+    {
+        switch(nr_linii)
+        {
+            case 1: temat[i]=linia;                     break;
+        }
+        i++;
+    }
 
     plik.close();
+
+    for(int i=0; i<5; i++)
+    {
+        cout << "temat " << temat[i]<< endl;
+    }
 
 
     return 0;
