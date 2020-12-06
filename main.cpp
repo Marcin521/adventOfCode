@@ -5,7 +5,7 @@
 
 using namespace std;
 
-string temat[5];
+string temat[199];
 
 int main() {
 
@@ -38,7 +38,7 @@ int main() {
 
     plik.close();
 
-    for(int i=0; i<5; i++)
+    for(int i=0; i<200; i++)
     {
         cout << "temat " << temat[i]<< endl;
     }
