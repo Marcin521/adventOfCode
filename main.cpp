@@ -6,6 +6,7 @@
 using namespace std;
 
 string temat[199];
+int score[199];
 
 int main() {
 
@@ -41,8 +42,9 @@ int main() {
     for(int i=0; i<200; i++)
     {
         cout << "temat " << temat[i]<< endl;
-    }
+        score[i] = stoi(temat[i]);
 
+    }
 
     return 0;
 }
